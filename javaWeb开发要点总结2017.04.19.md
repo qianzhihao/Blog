@@ -17,7 +17,7 @@
 
 # 5 在oracle数据库中建立员工表emp和部门表dept两张表，并在表中添加数据  
 # 6 项目主数据源配置（查看web.xml>>application-all.xml>>application-db.xml）
-## 6.1 修改bean.datasource.value与context.xml中Resource.name匹配
+	## 6.1 修改bean.datasource.value与context.xml中Resource.name匹配
 ## 6.2 修改jsp页面votedQryList.jsp中修改要展示的数据属性名
 ## 6.3 修改控制器RebateController的方法doChannelInit
 `List<Map<String, Object>> olist=rebateService.queryStaff();`
