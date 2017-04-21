@@ -42,25 +42,27 @@
 	
 	* 6.5 修改实现类rebateServiceImpl，增加方法queryStaff()
 	
-	>public List<Map<String, Object>> queryStaff(){
+	``` 
+	public List<Map<String, Object>> queryStaff(){
 	
-	>	String sql = "select * from staff a inner join dept b on a.dept = b.deptno "; 
+		String sql = "select * from staff a inner join dept b on a.dept = b.deptno "; 
 	
-	>	List<Map<String, Object>> list = new ArrayList<Map<String,Object>>(); 
+		List<Map<String, Object>> list = new ArrayList<Map<String,Object>>(); 
 	
-	>	try { 
+		try { 
 	
-	>		list = jdbcBaseDao.getJdbcTemplate().queryForList(sql.toString()); 
+			list = jdbcBaseDao.getJdbcTemplate().queryForList(sql.toString()); 
 	
-	>	} catch (Exception e) { 
+		} catch (Exception e) { 
 	
-	>	e.printStackTrace(); 
+		e.printStackTrace(); 
 	
-	>} 
+	} 
 	
-	>	return list; 
+		return list; 
 	
-	>} 
+	} 
+	``` 
 	
 	* 6.6 根据需要修改queryStaff()方法中sql语法，以获得需要的数据 
 	
